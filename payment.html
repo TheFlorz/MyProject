@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+               <head>
+               	<meta charset="utf-8">
+               	<meta name="viewport" content="width=device-width, intial scale=1.0">
+               	<link rel="icon" type="fi1/png" href="img/fi1.png">
+                <title>FlorzHosting Inc.</title>
+                <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+                <style type="text/css">
+                	.icon{
+                		font-size: 30px;
+                    margin-bottom: 20px;
+                    padding: 7, 0px;
+                    margin-left: 1em;
+                	}
+                  .bill{
+                   padding-bottom: 30px;
+                   padding-top: 10px;
+                   margin-left: 2px;
+                  }
+                  
+                  }
+                  form{
+                    padding-top: 20px;
+                    padding-bottom: 10px;
+                  }
+                  .check{
+                    padding-top: 20px;
+                    padding-bottom: 30px;
+                    margin-left: 1em;
+                  }
+                  .container{
+                    background-color: #f2f2f2;
+                    padding: 5px, 20px, 15px, 20px;
+                    border: 1px solid lightgrey;
+                    border-radius: 3px;
+                  }
+                  input[type=text] {
+                    width: 30%;
+                    margin-bottom: 20px;
+                    padding: 5px;
+                    border: 1px solid #ccc;
+                    border-radius: 3px;
+                  }
+                  label{
+                    margin-bottom: 10px;
+                    display: block;
+                  }
+                  .btn{
+                    background-color: green;
+                    color: white;
+                    padding: 12px;
+                    margin: 10px, 0px;
+                    width: 30%;
+                    cursor: pointer;
+                    font-size: 17px;
+                  }
+                  .btn:hover{
+                    background-color: #45a049;
+                  }
+                  h2{
+                    margin-left: 1em;
+                  }
+                  .card{
+                    margin-left: 2em;
+                  }
+                  .f{
+                    padding-top: 100px;
+                    padding-bottom: 30px;
+                    text-align: center;
+                    font-size: 24px; 
+                  }
+                 .deet{
+                  margin-left: 2px;
+                 }
+                 .n{
+                  color: black;
+                 }
+                 .navbar{
+                  margin-left: 1em;
+                  padding-top: 10px;
+                  padding: 5px;
+                 }
+                 .navbar a:hover{
+                  background-color: lightblue;
+                 }
+                 .e{
+                  padding-top: 10px;
+                 }
+                </style>
+               </head>
+               <body>
+                <!--Navbar-->
+                       <div class="navbar">
+                                <a href="index.html" class="n">Home</a>
+                                &nbsp; &nbsp; &nbsp;
+                                <a href="about.html" class="n">About</a>
+                                &nbsp; &nbsp; &nbsp;
+                                <a href="contact.html" class="n">Contact Us</a>
+                                &nbsp; &nbsp; &nbsp;
+                                <a href="menu.html" class="n">Shop Now</a> <i class="fa fa-shopping-cart"></i>
+                              </div>
+               	<div class="row">
+               	<div class="bill">
+                  <div class="container">
+               		<h2>Payment Portal</h2>
+               		<label for="fname" class="card">Accepted Cards</label>
+               		<div class="icon">
+               		<img src="img/mc5.png" width="40" height="30" alt="Mastercard icon">
+               		<i class="fa fa-cc-visa" style="color: blue;"></i>
+               		<img src="img/verve.png" width="40" height="25" alt="Verve icon">
+               	</div>
+               	<div class="bill" style="margin-left: 1em;">
+               	<label for="cname">Name on Card</label>
+               	<input type="text" id="cname" name="cardname" placeholder="Elizabeth Doe">
+               </div>
+               <div class="bill" style="margin-left: 1em;">
+               	<label for="ccnum">Credit Card number</label>
+               	<input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+               </div>
+               <div class="bill" style="margin-left: 1em;">
+               	<label for="expmonth">Exp Month</label>
+               	<input type="text" id="expmonth" name="expmonth" placeholder="October">
+               </div>
+               	<div class="row">
+                <div class="bill" style="margin-left: 1em;">
+               	<label for="expyear">Exp Year</label>
+               	<input type="text" id="expyear" name="expyear" placeholder="2020">
+               </div>
+               <div class="bill" style="margin-left: 1em;">
+               	<label for="cvv">CVV</label>
+               	<input type="text" id="cvv" name="cvv" placeholder="345">
+               </div>
+                </div>
+               	</div>
+               </div>
+                </div>
+                <div class="deet">
+                  <div class="container">
+                    <h2>Personal Details</h2>
+                    <div style="padding-top: 10px; padding-bottom: 30px; margin-left: 1em;">
+                    <label for="name"><i class="fa fa-user"></i>Full Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Elizabeth T. Doe">
+                  </div>
+                  <div style="padding-top: 10px; padding-bottom: 30px; margin-left: 1em;">
+                    <label for="email"><i class="fa fa-envelope">Email</i></label>
+                    <input type="text" id="email" name="email" placeholder="elizabeth@example.com">
+                  </div>
+                  <div style="padding-top: 10px; padding-bottom: 30px; margin-left: 1em;">
+                    <label for="city"><i class="fa fa-institution"></i>City</label>
+                    <input type="text" id="City" name="city" placeholder="Yaba">
+                  </div>
+                    <div style="padding-top: 10px; padding-bottom: 30px; margin-left: 1em;">
+                    <label for="state">State</label>
+                    <input type="text" id="state" name="state" placeholder="Lagos">
+                      </div>  
+                    </div>
+                  </div>
+                    <div class="check">
+                  <label>
+                    <input type="checkbox" checked="checked" name="confirm">Confirm Payment
+                  </label>
+                </div>
+                <div>
+                  <form>
+                  <a href="paid.html"><input type="submit" name="submit" value="Pay Now" class="btn" style="margin-left: 1em;"></a>
+                  </form>
+                </div>
+                </div>
+                </div>
+                <footer>
+                   <div class="f">
+                   <a href="http://www.twitter.com/The_Florencee" target="_blank">
+                   <i class="fa fa-twitter-square" style="color: black;"></i>
+                   </a>
+                   <a href="http://m.facebook.com/florence.ogunbore1" target="_blank">
+                   <i class="fa fa-facebook-square" style="color: black;"></i>
+                   </a>
+                    <a href="mailto:mzflawrens@gmail.com"><i class="fa fa-envelope" style="color: black;"></i></a>
+                    <div class="e">
+                                    <i class="fa fa-phone-square">+2348180034628</i>
+                                     </div>
+                    </div>
+                    <p style="text-align: center;">&copy 2018 FlorzHosting Inc. Developed by Florence Ogunbore. </p>
+                   </footer>
+               </body>
+</html>

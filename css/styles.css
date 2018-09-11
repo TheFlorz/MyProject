@@ -1,0 +1,103 @@
+/* Slideshow Container */
+                                  .container{
+                                    position: relative;
+                                    background: #f1f1f1f1;
+                                  }
+                                  /* Slides */
+                                  .myslides{
+                                        display: all;
+                                        padding: 80px;
+                                        text-align: center;
+                                  }
+                                  /* Next/Prev buttons */
+                                  .prev, .next{
+                                        cursor: pointer;
+                                        position: absolute;
+                                        top: 50%;
+                                        width: auto;
+                                        margin-top: -30px;
+                                        padding: 16px;
+                                        color: #888;
+                                        font-weight: bold;
+                                        font-size: 20px;
+                                        border-radius: 0 3px 3px 0;
+                                        user-select: none;
+                                  }
+                                  /*Positioning the next button to the right*/
+                                  .next{
+                                        position: absolute;
+                                        right: 0;
+                                        border-radius: 3px 0 0 3px;
+                                  }
+                                  /* On hover, a black blackground color with a little see through */
+                                  .prev:hover, .next:hover{
+                                        background-color: rgba(0,0,0,0.6);
+                                        color: white;
+                                  }
+                                  /* The dot/indicator container */
+                                  .dot-container{
+                                        text-align: center;
+                                        padding: 20px;
+                                        background: #ddd;
+                                  }
+                                  /*Dot/indicators*/
+                                  .dot{
+                                        cursor: pointer;
+                                        height: 15px;
+                                        width: 15px;
+                                        margin: 0 2px;
+                                        background-color: #bbb;
+                                        border-radius: 50%;
+                                        display: inline-block;
+                                        transition: background-color 0.6s ease;
+                                  }
+                                  /*background-color to the active dot/circle*/
+                                  .active, .dot:hover{
+                                        background-color: #717171;
+                                  }
+                                  /*Fontstyles to quotes*/
+                                  q{
+                                        font-style: italic;
+                                  }
+                                  .price{
+                                        color: green;
+                                  }
+
+
+
+
+                                  <!--Slidesow Container-->
+                            <div class="container">
+                            <!--Menu Slideshow-->
+                              <div class="myslides">
+                              <p>3rd Officer/Mate</p>
+                                <q>5 Free Domains, 1500MB Disk space, 5 Email Accounts, 3 Database, 5GB Monthly Bandwidth</q>
+                                <p class="price">#300/Month</p>
+                                <button class="btn">SHOP NOW <i class="fa fa-shopping-cart"></i></button>
+                                <p>2nd Officer</p>
+                                <q>10 Free Domains, 2500MB Disk space, 10 Email Accounts, 5 Database, 7GB Monthly Bandwidth</q>
+                                <p class="price">#750/Month</p>
+                                <button class="btn">SHOP NOW <i class="fa fa-shopping-cart"></i></button>
+                              </div>
+                              <div class="myslides">
+                                <p>1st Officer</p>
+                                <q>25 Free Domains, 5000MB Disk space, 20 Email Accounts, 10 Databases, 10GB Monthly Bandwidth</q>
+                                <p class="price">#2000/Month</p>
+                                <button class="btn">SHOP NOW <i class="fa fa-shopping-cart"></i></button>
+                              </div>
+                              <div class="myslides">
+                              <p>Captain</p>
+                                <q>50 Free Domains, 10000MB Disk space, Unlimited Email Accounts, 20 Databases, 20GB Monthly Bandwidth</q>
+                                <p class="price">#5000/Monthly</p>
+                                <button class="btn">SHOP NOW <i class="fa fa-shopping-cart"></i></button>
+                              </div>
+                              <!--Next/Prev buttons-->
+                              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                          </div>
+                          <!--Dots/Indicators-->
+                          <div class="dot-container">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                          </div>
